@@ -16,9 +16,13 @@
 			padding: 20px;
 		}
 
-		form input {
+		label {
+			display: inline-block;
 			width: 100%;
 		}
+
+		
+		form input:not([type="checkbox"]):not([type="radio"])
 
 		.box {
 			border: 2px solid #ff0000;
@@ -38,11 +42,78 @@
 				<input type="text" name="name" id="name" placeholder="ФИО">
 
 			</p>
-		
+
 			<p>
-				<label for="phone">телефон</label>
+				<label for="phone">Телефон</label>
 				<input type="tel" name="phone" id="phone" placeholder="телефон">
 			</p>
+
+			<p>
+				<label for="date">Дата рождения</label>
+				<input type="date" name="date" id="date">
+			</p>
+
+			<p>
+				<label for="email">Почта</label>
+				<input type="email" name="email" id="email" placeholder="Почта">
+
+			</p>
+
+			<p>
+				<div>
+					<label for="time">Время года</label>
+					<label>
+						<input type="radio" name="time" id="time">
+						<img src="images/spring.png" alt="весна">
+			   		</label>
+
+					<label>
+						<input type="radio" name="time" id="time">
+						<img src="images/summer.png" alt="лето">
+					</label>
+
+					<label>
+						<input type="radio" name="time" id="time">
+					<img src="images/autumn.png" alt="осень">
+					</label>
+
+					<label>
+						<input type="radio" name="time" id="time">
+						<img src="images/winter.png" alt="зима">
+					</label>
+				
+			</div>
+		</p>
+
+
+			<div>
+				<label for="fruit">Фрукты</label>
+				<label>
+					<input type="checkbox" name="fruit" id="fruit">
+					яблоки
+			    </label>
+
+				<label>
+					<input type="checkbox" name="fruit" id="fruit">
+					груши
+				</label>
+
+				<label>
+					<input type="checkbox" name="fruit" id="fruit">
+					апельсины
+				</label>
+
+				<label>
+					<input type="checkbox" name="fruit" id="fruit">
+					бананы
+				</label>
+
+				<label>
+					<input type="checkbox" name="fruit" id="fruit">
+					мандарины
+				</label>
+				
+			</div>
 
 
 		<div>
