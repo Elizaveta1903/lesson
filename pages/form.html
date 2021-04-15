@@ -20,6 +20,20 @@
 			display: inline-block;
 			width: 100%;
 		}
+		img[src] {
+			border: 2px solid #ff0000;
+		}
+
+		img[alt] {
+			border: 2px solid #00ff00;
+		}
+
+		img[alt^="s"] {
+			border: 2px solid #0000ff;
+		}		
+		
+
+
 
 		
 		form input:not([type="checkbox"]):not([type="radio"])
@@ -35,6 +49,13 @@
 	</style>
 </head>
 <body>
+
+	<ul>
+		<li>
+			<a href="../index.html">Home</a>
+		</li>
+	</ul>
+
 	<div class="conteiner">
 		<form method="GET" id="search">
 			<p>
@@ -64,22 +85,23 @@
 					<label for="time">Время года</label>
 					<label>
 						<input type="radio" name="time" id="time">
-						<img src="images/spring.png" alt="весна">
+						<img src="../images/spring.png" alt="весна">
 			   		</label>
 
+
 					<label>
 						<input type="radio" name="time" id="time">
-						<img src="images/summer.png" alt="лето">
+						<img src="../images/summer.png" alt="лето">
 					</label>
 
 					<label>
 						<input type="radio" name="time" id="time">
-					<img src="images/autumn.png" alt="осень">
+					<img src="../images/autumn.png" alt="осень">
 					</label>
 
 					<label>
 						<input type="radio" name="time" id="time">
-						<img src="images/winter.png" alt="зима">
+						<img src="../images/winter.png" alt="зима">
 					</label>
 				
 			</div>
@@ -150,6 +172,7 @@
 
 	</div>
 
+
 	
 
 	<p class="box">
@@ -169,6 +192,12 @@
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</p>
+
+	<img src="../images/spring.png">
+
+	<img src="../images/spring.png" alt="весна">
+	<img src="../images/summer.png" alt="summer">
+	<img src="../images/summer.png" alt="_summer">
 	
 	
 </body>
