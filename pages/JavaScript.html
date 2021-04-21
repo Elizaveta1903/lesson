@@ -2,8 +2,18 @@
 <html>
 <head>
 	<title>JavaScript</title>
+	<style type="text/css">
 
-	<script type="text/javascript" src="../asset/JS/main.js"></script>
+	.table {
+    		border: 1px solid #0000ff;
+    		text-align: justify; 
+    		width: 25%; 
+    		font-size: 11px;
+    	}
+
+    	</style>
+
+	
 </head>
 <body>
 	<p>
@@ -15,5 +25,78 @@
 		<!--<button onclick="changeColor();">changeColor</button>-->
 	</p>
 
-</body>
+	<p>
+		Цвет: <span id="result"></span>
+	</p>
+
+
+<table>
+	<thead >
+        <tr>
+        <th colspan="4">
+            <input type="text" name="enter" id="enter">
+        </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td >
+            <input type="button" name="number" class="oper" value="7">
+         </td>
+         <td >
+            <input type="button" name="number" class="oper" value="8">
+         </td>
+         <td >
+            <input type="button" name="number" class="oper" value="9">
+         </td>
+         <td >
+            <input type="button" name="number" class="oper" value="+">
+         </td>
+        </tr>
+       
+        <tr>
+        <td >
+            <input type="button" name="number" class="oper" value="4">
+         </td>
+         <td >
+            <input type="button" name="number" class="oper" value="5">
+         </td>
+         <td >
+            <input type="button" name="number" class="oper" value="6">
+         </td>
+         <td >
+            <input type="button" name="number" class="oper" value="-">
+         </td>
+        </tr>
+
+        <tr>
+        <td >
+            <input type="button" name="number" class="oper" value="1">
+         </td>
+         <td >
+            <input type="button" name="number" class="oper" value="2">
+         </td>
+         <td >
+            <input type="button" name="number" class="oper" value="3">
+         </td>
+         <td >
+            <input type="button" name="number" class="oper" value="*">
+         </td>
+        </tr>
+
+        <tr>
+        <td colspan="2">
+            <input type="button" name="number" class="oper" value="0">
+         </td>
+         <td >
+            <input type="button" name="number" class="oper" value="=">
+         </td>
+         <td >
+            <input type="button" name="number" class="oper" value="/">
+         </td>
+        </tr>
+        </tbody>
+        </table>
+
+        <script type="text/javascript" src="../asset/JS/main.js"></script>
 </html>
